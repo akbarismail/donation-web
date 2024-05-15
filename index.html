@@ -340,5 +340,13 @@
 </footer>
 
 <script src="js/bootstrap.js"></script>
+<script>
+    const themeSelect = document.getElementById('theme-select');
+    const body = document.body;
+
+    themeSelect.addEventListener('change', function () {
+        body.classList = this.value;
+    });
+</script>
 </body>
 </html>
