@@ -1,0 +1,435 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+    --Dark: #00233c;
+    --Primary: #0269b3;
+    --Accent: #80e8ff;
+    --AccentLight: #ecf9ff;
+    --Border: #ddd;
+    --Text: #333;
+    --Invert: #fff;
+    --Disabled: #d3d3d3;
+}
+
+.sunset {
+    --Dark: #3c332a;
+    --Primary: #8c6251;
+    --Accent: #eec294;
+    --AccentLight: #ecffef;
+}
+
+.earth {
+    --Dark: #2a3c3c;
+    --Primary: #51758c;
+    --Accent: #e8ee94;
+    --AccentLight: #f0f9ff;
+}
+
+.btn-primary {
+    background-color: var(--Primary);
+    color: var(--Invert);
+    font-weight: bold;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--AccentLight);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+}
+
+.btn-tertiary {
+    background-color: var(--Invert);
+    color: var(--Primary);
+    font-weight: bold;
+}
+
+.btn-tertiary:hover {
+    background-color: var(--Accent);
+    color: var(--Dark);
+}
+
+.text-invert {
+    color: var(--Invert);
+}
+
+.bg-progress {
+    background-color: var(--Primary);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.hero {
+    background-color: var(--Dark);
+    color: var(--Invert);
+}
+
+.hero h1 {
+    color: var(--Invert);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+span.hero-title {
+    color: var(--Accent);
+}
+
+.hero p {
+    color: var(--Invert);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.wrapper-content {
+    display: grid;
+    gap: 40px;
+}
+
+.hero-item-group {
+    display: flex;
+    gap: 3rem;
+}
+
+.feature {
+    background-color: var(--Invert);
+}
+
+.feature-right p {
+    color: var(--Text);
+    font-size: 20px;
+}
+
+.feature-right .card-feature {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-feature {
+    padding: 16px;
+    border: 1px solid var(--Border);
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+
+.card-feature p {
+    color: var(--Text);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card-feature img {
+    width: 28px;
+    height: 28px;
+}
+
+.explore-content {
+    text-align: center;
+}
+
+.invert-card {
+    padding: 1rem;
+    background-color: var(--Invert);
+    border-radius: 0.75rem;
+    align-items: center;
+}
+
+.card-donation {
+    padding: 16px;
+    background-color: var(--Invert);
+    border-radius: 12px;
+}
+
+.img-card {
+    width: 48px;
+    height: 48px;
+}
+
+.donation {
+    background-color: var(--Dark);
+}
+
+.wrap-donation h4 {
+    color: var(--Accent);
+    font-weight: bold;
+}
+
+.wrap-category-donation button.filter.active-category {
+    background-color: var(--Invert);
+    color: var(--Primary);
+    border: none;
+}
+
+.wrap-category-donation button.filter {
+    padding: 16px;
+    background-color: var(--Dark);
+    border: 1px solid var(--Invert);
+    color: var(--Invert);
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+.wrap-category-donation {
+    display: flex;
+    gap: 15px;
+}
+
+.wrap-card-donation {
+    display: flex;
+    gap: 32px;
+}
+
+.feature-form-right {
+    border: 1px solid var(--Border);
+    padding: 32px;
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+.feature-form .wrap-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 697px;
+}
+
+.group-footer {
+    margin-bottom: 72px;
+}
+
+.content-footer {
+    margin-top: 42px;
+}
+
+.content-footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--Text);
+}
+
+.contact p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Text);
+    margin-bottom: 16px;
+}
+
+.wrapper-item-first h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--Text);
+}
+
+.wrapper-item-first div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Text);
+    margin-bottom: 16px;
+}
+
+.wrapper-item-second h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--Text);
+}
+
+.wrapper-item-second div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Text);
+    margin-bottom: 16px;
+}
+
+.wrapper-payment h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--Text);
+}
+
+.wrapper-payment div img {
+    margin-bottom: 45px;
+}
+
+.group-copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid var(--Border);
+}
+
+.terms {
+    display: flex;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .wrapper-payment div img {
+        width: 90px;
+    }
+    .wrapper-payment div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .group-footer {
+        display: flex;
+        gap: 95px;
+    }
+    .group-feature-form {
+        display: flex;
+        gap: 125px;
+    }
+    .feature-form, .footer {
+        padding: 100px 80px;
+    }
+    .group-feature-form {
+        display: flex;
+        gap: 125px;
+    }
+    .wrap-card-donation {
+        justify-content: center;
+    }
+    .wrap-donation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 48px;
+    }
+    .wrap-category-donation {
+        justify-content: center;
+    }
+    .donation-content {
+        padding: 100px 80px;
+    }
+    .group-explore-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+    .explore {
+        background-image: url("assets/explore-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 80px;
+    }
+    .feature {
+        display: flex;
+        gap: 80px;
+        padding: 100px 80px;
+    }
+    .feature-right h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--Text);
+        margin-bottom: 28px;
+    }
+    .feature-right p {
+        color: var(--Text);
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero-left {
+        padding: 112px 80px;
+    }
+    .hero-right img {
+        height: 100%;
+        width: 100%;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .mobile-view {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper-payment div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .group-copyright, .terms {
+        display: block;
+    }
+    .copy-right {
+        margin-bottom: 30px;
+    }
+    .donation, .feature-form, .footer {
+        padding: 3rem 1.25rem;
+    }
+    .wrap-category-donation {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .wrap-category-donation button.filter,
+    .wrap-category-donation button.filter.active-category {
+        padding: 12px 16px;
+        font-size: 14px;
+        min-width: 170px;
+        border-radius: 100px;
+        margin-bottom: 8px;
+    }
+    .explore {
+        background-image: url("assets/explore-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3rem 1.25rem;
+    }
+    .invert-card {
+        margin-bottom: 16px;
+        min-width: 100%;
+    }
+    .card-donation {
+        min-width: 18rem;
+        margin-bottom: 8px;
+    }
+    .wrap-card-donation {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .feature-right h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--Text);
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .feature-right p {
+        color: var(--Text);
+        font-size: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-right img {
+        padding-top: 65px;
+        width: 100%;
+    }
+    .wrapper-group, .feature {
+        padding: 3rem 1.25rem;
+    }
+    .btn-tertiary, .btn-primary {
+        width: 100%;
+    }
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+}
